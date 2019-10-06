@@ -1,0 +1,59 @@
+<!-- <ion-menu side="start" menuId="drawer">
+  <ion-content>
+
+    <ul class="uk-list">
+        <li routerLink="/dashboard"><span class="icon" uk-icon="icon: database; ratio: 1.4"> </span>Dashboard</li>
+        <li routerLink="/reports"><span class="icon" uk-icon="icon: file-text; ratio: 1.4"> </span>Reports</li>
+        <li routerLink="/analyze"><span class="icon" uk-icon="icon:  history; ratio: 1.4"> </span>Analyze</li>
+        <li routerLink="/settings"><span class="icon" uk-icon="icon: settings; ratio: 1.4"> </span>Settings</li>
+    </ul>
+
+  </ion-content>
+  <ion-footer class="menu-footer" (click)="alert('')">
+    <span uk-icon="icon: sign-in"></span> Logout
+  </ion-footer>
+</ion-menu>
+
+<ion-router-outlet main></ion-router-outlet> 
+<ion-header class="nav-bar">
+  <span uk-icon="icon: menu; ratio: 1.4" (click)="pullDrawer()"></span>
+</ion-header>
+<ng-content></ng-content> -->
+
+<ion-menu class="menu_main"  menuId="drawer" side="start" content-id="content">
+    <ion-header>
+        <ion-toolbar color="secondary">
+            <ion-title>Left Menu</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content padding>
+        Hello World!
+    </ion-content>
+</ion-menu>
+
+<ion-header class="nav-bar">
+    <span uk-icon="icon: menu; ratio: 1.4" (click)="pullDrawer()"></span>
+</ion-header>
+
+
+<ion-content id="content">
+    <ng-content></ng-content>
+ <ion-card style="display:inline-block;width:300px">
+    <ion-card-header>
+        <ion-card-title>Hello World</ion-card-title>
+    </ion-card-header>
+    <div style="padding:10px 10px;text-align:right;">
+        <ion-button color="primary" class="button_details">Details</ion-button>
+    </div>
+</ion-card>
+menu-footer
+
+more 
+more
+
+</ion-content>
+
+<!-- <ion-content>
+  this should atleast work.
+  <ng-content></ng-content>
+</ion-content> -->

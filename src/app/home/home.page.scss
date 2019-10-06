@@ -1,1 +1,19 @@
+.cards-body {
+    padding: 16px;
+    background:  #ecf0f1;
+}
 
+ion-content {
+    --background: #ecf0f1;
+    --color:black;
+}
+
+.card-title {
+    color: #4b6584;
+    font-size: 12px;
+}
+
+.card-value {
+    color: #20bf6b;
+    font-size: 26px;
+}

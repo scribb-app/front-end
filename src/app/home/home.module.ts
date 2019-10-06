@@ -4,6 +4,7 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+import { PrimaryLayoutModule } from '../layouts/primary-layout/primary-layout.module';
 import { HomePage } from './home.page';
 
 @NgModule({
@@ -11,12 +12,13 @@ import { HomePage } from './home.page';
     CommonModule,
     FormsModule,
     IonicModule,
+    PrimaryLayoutModule,
     RouterModule.forChild([
       {
         path: '',
         component: HomePage
       }
-    ])
+    ]),
   ],
   declarations: [HomePage]
 })

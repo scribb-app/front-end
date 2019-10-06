@@ -1,0 +1,38 @@
+ion-menu {
+    padding-top: 30px;
+    margin-top: 40px;
+    background: white;
+    ion-content {
+        --background: #fff;
+        .uk-list {
+            margin-top: 15px;
+            li{
+                cursor: pointer;
+            }
+        }
+        .icon {
+            padding: 10px;
+        }
+    }
+}
+
+.nav-bar {
+    padding: 8px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: rgb(83,82,237);
+    color: white;
+}
+
+
+.menu-footer {
+    padding: 8px;
+    cursor: pointer;
+}
+
+ion-content {
+    --background: #fff;
+}
