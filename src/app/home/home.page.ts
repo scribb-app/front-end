@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { ApisService } from '../services/apis.service';
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -7,6 +9,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  lists;
+
+  constructor(private apis: ApisService) {
+    this.lists = [{name:'s'},{name:'sas'}];//this.apis.getLists();
+  }
 
 }
