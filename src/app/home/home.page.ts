@@ -10,9 +10,11 @@ import { ApisService } from '../services/apis.service';
 export class HomePage {
 
   lists;
+  nothingToDisplay;
 
   constructor(private apis: ApisService) {
-    this.lists = [{name:'s'},{name:'sas'}];//this.apis.getLists();
+    this.lists = [];//this.apis.getLists();
+    this.nothingToDisplay = true;
   }
 
 }

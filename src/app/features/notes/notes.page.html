@@ -1,9 +1,19 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>notes</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-primary-layout>
 
-<ion-content>
+  <!-- /notes/create -->
+  <div *ngIf="action == 'create'">
+      <form (ngSubmit)="logForm()">
+        <ion-item>
+          <ion-label>Todo</ion-label>
+          <ion-input type="text" formControlName="title"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Description</ion-label>
+          <ion-textarea formControlName="description"></ion-textarea>
+        </ion-item>
+        <button ion-button type="submit" [disabled]="!todo.valid">Submit</button>
+      </form>
+  </div>
+  <!-- /notes/create -->
 
-</ion-content>
+</app-primary-layout>

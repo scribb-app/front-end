@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Validators, FormBuilder, FormGroup } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-notes',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotesPage implements OnInit {
 
-  constructor() { }
+  action;
+  private todo : FormGroup;
 
   ngOnInit() {
+    this.action = this.route.snapshot.paramMap.get('action');
+  }  
+
+  constructor(private route: ActivatedRoute, private formBuilder: FormBuilder ) {
+    this.todo = this.formBuilder.group({
+      title: ['', Validators.required],
+      description: [''],
+    });
+  }
+  logForm(){
+    console.log(this.todo.value)
   }
 
 }

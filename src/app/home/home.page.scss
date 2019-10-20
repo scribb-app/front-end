@@ -1,19 +1,25 @@
-.cards-body {
-    padding: 16px;
-    background:  #ecf0f1;
-}
-
-ion-content {
-    --background: #ecf0f1;
-    --color:black;
-}
-
-.card-title {
-    color: #4b6584;
-    font-size: 12px;
-}
-
-.card-value {
-    color: #20bf6b;
-    font-size: 26px;
+#empty-state-container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    #empty-state {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        // width: 100px;
+        // height: 100px;
+        -webkit-transform: translate(-50%, -50%);  
+        transform: translate(-50%, -50%);
+        img {
+            width: 200px;
+            // display: block;
+            // margin: 0 auto;
+            position: relative;
+            left: 50%;
+            -webkit-transform: translateX(-100px);
+            -ms-transform: translateX(-100px);
+            transform: translateX(-100px);
+        }
+    }
 }

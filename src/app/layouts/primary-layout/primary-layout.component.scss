@@ -1,10 +1,10 @@
 ion-menu {
     padding-top: 30px;
     margin-top: 40px;
-    background: white;
+    // background: white;
     ion-content {
-        --background: #fff;
         .uk-list {
+            color: #4b4b4b;
             margin-top: 15px;
             padding: 10px;
             li{
@@ -24,8 +24,10 @@ ion-menu {
     left: 0;
     right: 0;
     z-index: 9999;
-    background: rgb(83,82,237);
+    // background: rgb(83,82,237);
     color: white;
+    background: rgb(125,95,255);
+    background: linear-gradient(317deg, rgba(125,95,255,1) 14%, rgba(125,95,255,1) 39%, rgba(63,69,251,1) 88%, rgba(55,66,250,1) 93%);
 }
 
 

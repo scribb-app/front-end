@@ -31,6 +31,10 @@ ion-content {
     height: 100vh;
 }
 
+.capitalize {
+    text-transform: capitalize;
+}
+
 .card {
     background-color: #ffffff;
     box-shadow: none;

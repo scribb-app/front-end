@@ -4,14 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
-import { PrimaryLayoutModule } from '../../layouts/primary-layout/primary-layout.module';
 
-import { NotesPage } from './notes.page';
+import { LandingPage } from './landing.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: NotesPage
+    component: LandingPage
   }
 ];
 
@@ -20,9 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    PrimaryLayoutModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [NotesPage]
+  declarations: [LandingPage]
 })
-export class NotesPageModule {}
+export class LandingPageModule {}
